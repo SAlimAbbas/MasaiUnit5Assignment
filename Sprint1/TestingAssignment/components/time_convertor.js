@@ -7,8 +7,7 @@ const time_convertor=(milliseconds)=>{
         seconds = seconds % 60;
         minutes = minutes % 60;
         hours=hours% 24
-    // return{second:seconds,minutes:minutes,hours:hours}
-    // }
+        
     
 
     return {second:seconds,minut:minutes,hour:hours}
