@@ -1,0 +1,9 @@
+.otpInput{
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+    text-align: center;
+    font-size: 40px;
+    outline: none;
+    border-radius: 10px;
+}

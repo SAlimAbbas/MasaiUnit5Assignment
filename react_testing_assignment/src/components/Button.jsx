@@ -9,12 +9,12 @@ export const Button =()=>{
 
             <button 
             data-testid="addButton"
-            onClick={(e)=>setCounter(counter+5)}  style={{color:"coral"}}
+            onClick={()=>setCounter(counter+5)}  style={{color:"coral"}}
             >
                 ADD</button>
             <button 
             data-testid="reduceButton"
-            onClick={(e)=>setCounter(counter-5)}  style={{color:"coral"}}
+            onClick={()=>setCounter(counter-5)}  style={{color:"coral"}}
             >
                 REDUCE</button>
         </div>

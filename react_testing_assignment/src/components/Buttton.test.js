@@ -27,14 +27,26 @@ describe('Button Tests', function(){
     })
 
     it('should increment the value of Counter by 5 onClick on ADD',function(){
-        let mockFn=jest.fn();
-        render(<Button onClick={mockFn}>ADD</Button>)
+        let MockFn=jest.fn();
+        render(<Button onClick={MockFn}>ADD</Button>)
 
         const btn=screen.getByText("ADD");
 
         fireEvent.click(btn);
     
-        expect(mockFn).toBeCalledTimes(0);
+        expect(MockFn).toBeCalledTimes(0);
+
+    })
+
+    it('should decrement the value of Counter by 5 onClick on REDUCE',function(){
+        let MockFn=jest.fn();
+        render(<Button onClick={MockFn}>REDUCE</Button>)
+
+        const btn=screen.getByText("REDUCE");
+
+        fireEvent.click(btn);
+    
+        expect(MockFn).toBeCalledTimes(0);
 
     })
 })
